@@ -15,24 +15,35 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add Task" />
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Delete Task">
+                  <Button mnemonicParsing="false" onAction="#addnewtask" prefHeight="26.0" prefWidth="90.0" text="Add Task" />
+                  <Button mnemonicParsing="false" onAction="#deletetask" prefHeight="26.0" prefWidth="90.0" text="Delete Task">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="90.0" text="Exit">
+                  <Button mnemonicParsing="false" onAction="#exitprogram" prefWidth="90.0" text="Exit">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
                </children>
             </HBox>
-            <TextField prefWidth="280.0" promptText="Add Task">
+            <TextField fx:id="newtask" prefWidth="280.0" promptText="Add Task">
                <VBox.margin>
                   <Insets left="10.0" right="10.0" />
                </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </TextField>
+            <ListView fx:id="tasklist" prefHeight="200.0" prefWidth="200.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
          </children></VBox>
    </children>
    <columnConstraints>
