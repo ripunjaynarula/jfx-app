@@ -1,0 +1,46 @@
+#exitbtn{
+
+    -fx-background-color:#d0451b
+    
+}
+
+#exitbtn:hover{
+
+    -fx-background-color:#bc3315
+    -fx-text-fill white;
+}
+
+#addbtn{
+
+    -fx-background-color:#44c767
+    
+}
+
+#addbtn:hover{
+
+    -fx-background-color:#5cbf2a
+    -fx-text-fill white;
+}
+
+#dltbtn{
+
+    -fx-background-color:#2dabf9
+    
+}
+
+#dltbtn:hover{
+
+    -fx-background-color:#0688fa
+    -fx-text-fill white;
+}
+
+#bgpane{
+
+    
+    -fx-background-color: #f0c311
+}
+
+#txt{
+ 
+    -fx-background-color: #fce2c1
+}

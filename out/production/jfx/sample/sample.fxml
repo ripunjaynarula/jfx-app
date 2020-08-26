@@ -7,7 +7,7 @@
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <AnchorPane prefHeight="270.0" prefWidth="300.0" />
+      <AnchorPane id="bgpane" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../out/Styles/styles.css" />
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
             <HBox prefHeight="47.0" prefWidth="300.0" spacing="10.0">
@@ -15,20 +15,26 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
                <children>
-                  <Button mnemonicParsing="false" onAction="#addnewtask" prefHeight="26.0" prefWidth="90.0" text="Add Task" />
-                  <Button mnemonicParsing="false" onAction="#deletetask" prefHeight="26.0" prefWidth="90.0" text="Delete Task">
+                  <Button id="addbtn" mnemonicParsing="false" onAction="#addnewtask" prefHeight="26.0" prefWidth="90.0" stylesheets="@../../out/Styles/styles.css" text="Add Task" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Button>
+                  <Button id="dltbtn" mnemonicParsing="false" onAction="#deletetask" prefHeight="26.0" prefWidth="90.0" stylesheets="@../../out/Styles/styles.css" text="Delete Task" textFill="WHITE">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#exitprogram" prefWidth="90.0" text="Exit">
+                  <Button id="exitbtn" mnemonicParsing="false" onAction="#exitprogram" prefWidth="90.0" stylesheets="@../../out/Styles/styles.css" text="Exit" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
                </children>
             </HBox>
-            <TextField fx:id="newtask" prefWidth="280.0" promptText="Add Task">
+            <TextField id="txt" fx:id="newtask" prefWidth="280.0" promptText="Add Task" stylesheets="@../../out/Styles/styles.css">
                <VBox.margin>
                   <Insets left="10.0" right="10.0" />
                </VBox.margin>
@@ -36,7 +42,7 @@
                   <Insets />
                </opaqueInsets>
             </TextField>
-            <ListView fx:id="tasklist" prefHeight="200.0" prefWidth="200.0">
+            <ListView id="txt" fx:id="tasklist" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../out/Styles/styles.css">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
